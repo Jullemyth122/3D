@@ -1,0 +1,107 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+#flagWrapper {
+  margin: 10px;
+  height: 80px;
+  width: 170px;
+  position: relative;
+  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.25);
+}
+
+nav ul li {
+    z-index: 1000;
+    position: absolute;
+    list-style: none;
+    top: 0;
+    right: 0;
+    transform-origin: center;
+    transform: translate(0%,25%);
+    padding: 5px 15px;
+    background-color: rgba(202, 255, 8, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+nav ul li a {
+    color: black;
+    font-size: 25px;
+    font-style: italic;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+}
+
+nav ul #blue, nav ul #red {
+  height: 50%;
+}
+
+nav ul #blue {
+  background: #0038a881;
+  backdrop-filter: blur(10px);
+
+}
+
+nav ul #red {
+  background: #ce112780;
+  backdrop-filter: blur(10px);
+
+}
+
+nav ul #white {
+  position: relative;
+  top: -80px;
+  height: 0;
+  width: 0;
+  border-bottom: 40px solid transparent;
+  border-left: 106px solid rgba(255, 255, 255, 0.514);
+  border-top: 40px solid transparent;
+  backdrop-filter: blur(10px);
+}
+
+nav ul #sun {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 20px;
+  left: 18px;
+  background-image: url("http://upload.wikimedia.org/wikipedia/commons/9/96/Flag_of_the_Philippines_-_cropped_sun.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+nav ul [class*=star-] {
+  color: #fcd116;
+  font-size: 18px;
+}
+nav ul [class*=star-]::before {
+  content: "★";
+}
+
+nav ul .star-1 {
+  position: absolute;
+  top: 10px;
+  left: 3px;
+  transform: rotate(121deg);
+}
+nav ul .star-2 {
+  position: absolute;
+  bottom: 10px;
+  left: 3px;
+}
+nav ul .star-3 {
+  position: absolute;
+  top: 25px;
+  left: 78px;
+  transform: rotate(90deg);
+}
